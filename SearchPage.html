@@ -2,9 +2,65 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>CanF Canned Food Searcher</title>
+	<title>CanF - Canned Food Manager</title>
+	<link rel="shortcut icon" href="C:\Users\Bohdan.V\Google Drive\Web_ptoject\HTML\img\Page_Icon.png" type="image/png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-	
+	    <!-- A navigation panel -->
+	 <nav>
+      <ul>
+        <li><a href="#"><img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\HTML\img\Page_Icon.png" alt="Smiley face" height="50" width="50">CanF</a></li>
+         <!-- A Search form -->
+        <form>
+         <input type="search" name="q" placeholder="Search for a product">
+         <input type="submit" value="Search!">
+       </form>
+        <li><a href="#">Add your product</a></li>
+              <li><a href="#">About</a></li>
+         <li><a href="#"><i class="material-icons" style="font-size:40px;color:red;">settings</i></a></li>     
+      </ul>
+     </nav>
+
+      <!-- side pannel for filters -->
+      <aside>
+      	<ul>
+			<li><img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\HTML\img\Filter.jpg" alt="Smiley face" height="110" width="200"></li>
+
+       		 <li><h2>Filters</h2></li>
+				<!--Drop-down list of criteria-->
+      			<li>
+      				<select>
+						<option label="Choose a criterion" value="1" selected>Choose a criterion</option>
+						<option>Brends</option>
+						<option>Categiries</option>
+						<option>Pacaging</option>
+						<option>Labels</option>
+						<option>Origins of engridients</option>
+						<option>Manufacturing of processing places</option>
+						<option>Packager codes</option>
+						<option>purchase palces</option>
+						<option>Stores</option>
+						<option>Countries</option>
+						<option>Additives</option>
+						<option>Alergens</option>
+						<option>Traces</option>
+						<option>Nutrition grades</option>
+						<option>Languages</option>
+						<option>Contributors</option>
+						<option>Editors</option>
+						<option>States</option>
+					</select>
+				</li>
+				<!--Drop-down list of include\exclude of search-->
+				<li>	
+					<select>
+						<option label="Include" value="1" selected>Include</option>
+						<option>Exclude</option>
+					</select>
+				</li>
+		</ul>
+      </aside>
+   	  
 </body>
 </html>
