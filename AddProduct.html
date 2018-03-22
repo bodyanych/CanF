@@ -1,0 +1,217 @@
+﻿<html>
+    <head>
+            <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/AddProduct.css">
+        <title>CanF</title>
+        <link rel="shortcut icon" href="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\3.jpg" type="image/png">
+
+        <style type="text/css">    
+           * { margin: 0; padding: 0; }
+           p { padding: 0px; }
+           #left { position: absolute; left: 0; top: 64px; width: 15%; }
+           
+           #right { position: relative; left: 20%; right: 5%; top: 70px; width: 75%; } 
+          
+
+        </style>
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <nav class="nav-bar">
+                <div class="container nav-links">
+                    <a href="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\index.html" class="brand"></a>
+                    <form id="search_box">
+                        
+                    <div id="search"
+                    <a class="#"><input type="search" name="q" placeholder="Search for a product"></a>
+                     </div id="button">
+                  <a href="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\SearchPage.html"><button>Search</button></a>
+                    </form>
+                    <a href="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\AddProduct.html">Add product</a>
+                  
+                    <a href="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\AboutPage.html">About</a>
+                </div>
+
+         <!-- side pannel for filters -->
+      <div id="left">
+        <div id="filters">
+            <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\filter.png" height="125" width="200">
+
+             <h2>Filters</h2>
+                
+            <!--Drop-down list of include\exclude of search-->    
+                <ul>
+          <li>
+            <label for="title_1">
+              <input type="radio" id="title_1" name="title" value="M." >
+              Include
+            </label>
+          </li>
+          <li>
+            <label for="title_2">
+              <input type="radio" id="title_2" name="title" value="Ms.">
+              Exclude
+            </label>
+          </li>
+      </ul>
+      <!--Drop-down list of criteria-->
+                    <select>
+                        <option label="Choose a criterion" value="1" selected>Choose a criterion</option>
+                        <option>Brends</option>
+                        <option>Categiries</option>
+                        <option>Pacaging</option>
+                        <option>Labels</option>
+                        <option>Origins of engridients</option>
+                        <option>Manufacturing of places</option>
+                        <option>Packager codes</option>
+                        <option>purchase palces</option>
+                        <option>Stores</option>
+                        <option>Countries</option>
+                        <option>Additives</option>
+                        <option>Alergens</option>
+                        <option>Traces</option>
+                        <option>Nutrition grades</option>
+                        <option>Languages</option>
+                        <option>Contributors</option>
+                        <option>Editors</option>
+                        <option>States</option>
+                    </select>
+        </div>
+    </div>
+
+    <div id="right">
+    </aside>
+    <section class="addProduct">
+      <section>
+    <h2 id="userinfo" >Contact information</h2>
+    <br>
+    <p>
+      <label for="name">
+        <span>Name: </span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="text" id="name" name="username">
+    </p>
+
+    <p>
+      <label for="mail">
+        <span>E-mail: </span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="email" id="mail" name="usermail">
+    </p>
+    <p>
+      <label for="pwd">
+        <span>Password: </span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="password" id="pwd" name="password">
+    </p>
+    <br>
+</section>
+<section id="ProdInfo">
+    <h2>Product information</h2>
+    <br>
+    <p>
+      <label for="Name">
+        <span>Name of a product:</span>
+      </label>
+      <input type="text" id="name" name="Name of a product">
+    </p>
+    <p>
+      <span>Product picture</span>
+      <input type="file" name="file" id="Product picture" accept="image/*" multiple> 
+  </p>
+    <p>
+      <label for="Quantity">
+        <span>Quantity:</span>
+      </label>
+      <input type="text" id="name" name="Quantity">
+    </p>
+    <p>
+      <label for="Brands">
+        <span>Brands:</span>
+      </label>
+      <input type="text" id="name" name="Brands">
+    </p>
+    <p>
+      <label for="Categories">
+        <span>Categories:</span>
+      </label>
+      <input type="text" id="name" name="Categories">
+    </p>
+        <p>
+      <label for="Labels, certifications, awards">
+        <span>Labels, certifications, awards:</span>
+      </label>
+      <input type="text" id="name" name="Labels, certifications, awards">
+    </p>
+    <p>
+      <label for="Manufacturing or processing places">
+        <span>Manufacturing or processing places:</span>
+      </label>
+      <input type="text" id="name" name="Manufacturing or processing places">
+    </p>
+    <p>
+      <label for="Link to the product page on the official site of the producer:">
+        <span>Link to the product page on the official site of the producer::</span>
+      </label>
+      <input type="text" id="name" name="Link to the product page on the official site of the producer:">
+    </p>
+    <p>
+      <label for="Stores">
+        <span>Stores:</span>
+      </label>
+      <input type="text" id="name" name="Stores">
+    </p>
+    <p>
+      <label for="Countries where sold">
+        <span>Countries where sold:</span>
+      </label>
+      <input type="text" id="name" name="Countries where sold">
+    </p>
+
+    <p>
+    <span>Ingredients</span>
+    <input type="file" name="file" id="Ingredients" accept="image/*" multiple> 
+    </p>
+    <p>
+      <label for="Ingredients list:">
+        <span>Ingredients list:</span>
+      </label>
+      <input type="text" id="name" name="Ingredients list:">
+    </p>
+    <br>
+   </section>
+    <section id="NutritionFacts">
+      <br>
+      <h2>Nutrition Facts</h2>
+      <br>
+     <p>
+    <span>Nutrition facts</span>
+    <input type="file" name="file" id="Nutrition facts" accept="image/*" multiple> 
+    </p>
+
+</section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+        
+
+            </div>
+        </div>
+
+
+    </body>
+</html>

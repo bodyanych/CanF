@@ -1,66 +1,258 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>CanF - Canned Food Manager</title>
-	<link rel="shortcut icon" href="C:\Users\Bohdan.V\Google Drive\Web_ptoject\HTML\img\Page_Icon.png" type="image/png">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-<body>
-	    <!-- A navigation panel -->
-	 <nav>
-      <ul>
-        <li><a href="#"><img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\HTML\img\Page_Icon.png" alt="Smiley face" height="50" width="50">CanF</a></li>
-         <!-- A Search form -->
-        <form>
-         <input type="search" name="q" placeholder="Search for a product">
-         <input type="submit" value="Search!">
-       </form>
-        <li><a href="#">Add your product</a></li>
-              <li><a href="#">About</a></li>
-         <li><a href="#"><i class="material-icons" style="font-size:40px;color:red;">settings</i></a></li>     
+﻿<html>
+    <head>
+            <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/SearchPage.css">
+        <title>CanF</title>
+        <link rel="shortcut icon" href="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\3.jpg" type="image/png">
+
+        <style type="text/css">    
+           * { margin: 0; padding: 0; }
+           p { padding: 0px; }
+           #left { position: absolute; left: 0; top: 64px; width: 15%; }
+           
+           #right { position: absolute; left: 20%; right: 5%; top: 70px; width: 75%; } 
+          
+
+        </style>
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <nav class="nav-bar">
+                <div class="container nav-links">
+                    <a href="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\index.html" class="brand"></a>
+                    <form id="search_box">
+                        
+                    <div id="search"
+                    <a class="#"><input type="search" name="q" placeholder="Search for a product"></a>
+                     </div id="button">
+                    <a href="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\SearchPage.html"><button>Search</button></a>
+                    </form>
+                    <a href="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\AddProduct.html">Add product</a>
+                  
+                    <a href="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\AboutPage.html">About</a>
+                </div>
+
+         <!-- side pannel for filters -->
+      <div id="left">
+        <div id="filters">
+            <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\filter.png" height="125" width="200">
+
+             <h2>Filters</h2>
+                
+            <!--Drop-down list of include\exclude of search-->    
+                <ul>
+          <li>
+            <label for="title_1">
+              <input type="radio" id="title_1" name="title" value="M." >
+              Include
+            </label>
+          </li>
+          <li>
+            <label for="title_2">
+              <input type="radio" id="title_2" name="title" value="Ms.">
+              Exclude
+            </label>
+          </li>
       </ul>
-     </nav>
+      <!--Drop-down list of criteria-->
+                    <select>
+                        <option label="Choose a criterion" value="1" selected>Choose a criterion</option>
+                        <option>Brends</option>
+                        <option>Categiries</option>
+                        <option>Pacaging</option>
+                        <option>Labels</option>
+                        <option>Origins of engridients</option>
+                        <option>Manufacturing of places</option>
+                        <option>Packager codes</option>
+                        <option>purchase palces</option>
+                        <option>Stores</option>
+                        <option>Countries</option>
+                        <option>Additives</option>
+                        <option>Alergens</option>
+                        <option>Traces</option>
+                        <option>Nutrition grades</option>
+                        <option>Languages</option>
+                        <option>Contributors</option>
+                        <option>Editors</option>
+                        <option>States</option>
+                    </select>
+        </div>
+    </div>
+        
+            <table id="right">
+            </nav class="info">
+                <tr>
+                    <td>
+                    <div class="box">
+                    <a href="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\ProductInfo.html"><img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod1.jpg" alt="Baked beans in tomato sauce - Heinz - 415 g, 212 g (осн. продукт)"> </a>
+                     <h4>Baked beans in tomato sauce - Heinz - 415 g, 212 g (осн. продукт)</h4> 
 
-      <!-- side pannel for filters -->
-      <aside>
-      	<ul>
-			<li><img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\HTML\img\Filter.jpg" alt="Smiley face" height="110" width="200"></li>
+                </div>
+                </td>
+                
+                <td>
+                <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod2.jpg" alt="Haricots blancs - Carrefour - 400 g (425 ml) (265 g égoutté)">
+                     <h4>Haricots blancs - Carrefour - 400 g (425 ml) (265 g égoutté)</h4> 
+                </div>
+                </td>
+                <td>
+                <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod3.jpg" alt="Bean Boozled - Jelly belly candy company - 45g">
+                     <h4>Bean Boozled - Jelly belly candy company - 45g</h4> 
+                </div>
+                </td>
+                <td>
+                <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod4.jpg" alt="Haricots rouges - Saint Eloi - 400 g, 250 g egoutté, 425 ml">
+                     <h4>Haricots rouges - Saint Eloi - 400 g, 250 g egoutté, 425 ml</h4> 
+                </div>
+                </td>
+                
+               
+                <td>
+                <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod5.jpg" alt="Haricots verts extra-fin - U - 440 g">
+                     <h4>Haricots verts extra-fin - U - 440 g</h4> 
+                </div>
+                </td>
+                 </tr>
+                  <tr>
+                    <td>
+                    <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod1.jpg" alt="Baked beans in tomato sauce - Heinz - 415 g, 212 g (осн. продукт)">
+                     <h4>Baked beans in tomato sauce - Heinz - 415 g, 212 g (осн. продукт)</h4> 
 
-       		 <li><h2>Filters</h2></li>
-				<!--Drop-down list of criteria-->
-      			<li>
-      				<select>
-						<option label="Choose a criterion" value="1" selected>Choose a criterion</option>
-						<option>Brends</option>
-						<option>Categiries</option>
-						<option>Pacaging</option>
-						<option>Labels</option>
-						<option>Origins of engridients</option>
-						<option>Manufacturing of processing places</option>
-						<option>Packager codes</option>
-						<option>purchase palces</option>
-						<option>Stores</option>
-						<option>Countries</option>
-						<option>Additives</option>
-						<option>Alergens</option>
-						<option>Traces</option>
-						<option>Nutrition grades</option>
-						<option>Languages</option>
-						<option>Contributors</option>
-						<option>Editors</option>
-						<option>States</option>
-					</select>
-				</li>
-				<!--Drop-down list of include\exclude of search-->
-				<li>	
-					<select>
-						<option label="Include" value="1" selected>Include</option>
-						<option>Exclude</option>
-					</select>
-				</li>
-		</ul>
-      </aside>
-   	  
-</body>
+                </div>
+                </td>
+                
+                <td>
+                <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod2.jpg" alt="Haricots blancs - Carrefour - 400 g (425 ml) (265 g égoutté)">
+                     <h4>Haricots blancs - Carrefour - 400 g (425 ml) (265 g égoutté)</h4> 
+                </div>
+                </td>
+                <td>
+                <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod3.jpg" alt="Bean Boozled - Jelly belly candy company - 45g">
+                     <h4>Bean Boozled - Jelly belly candy company - 45g</h4> 
+                </div>
+                </td>
+                <td>
+                <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod4.jpg" alt="Haricots rouges - Saint Eloi - 400 g, 250 g egoutté, 425 ml">
+                     <h4>Haricots rouges - Saint Eloi - 400 g, 250 g egoutté, 425 ml</h4> 
+                </div>
+                </td>
+                
+               
+                <td>
+                <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod5.jpg" alt="Haricots verts extra-fin - U - 440 g">
+                     <h4>Haricots verts extra-fin - U - 440 g</h4> 
+                </div>
+                </td>
+                 </tr> <tr>
+                    <td>
+                    <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod1.jpg" alt="Baked beans in tomato sauce - Heinz - 415 g, 212 g (осн. продукт)">
+                     <h4>Baked beans in tomato sauce - Heinz - 415 g, 212 g (осн. продукт)</h4> 
+
+                </div>
+                </td>
+                
+                <td>
+                <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod2.jpg" alt="Haricots blancs - Carrefour - 400 g (425 ml) (265 g égoutté)">
+                     <h4>Haricots blancs - Carrefour - 400 g (425 ml) (265 g égoutté)</h4> 
+                </div>
+                </td>
+                <td>
+                <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod3.jpg" alt="Bean Boozled - Jelly belly candy company - 45g">
+                     <h4>Bean Boozled - Jelly belly candy company - 45g</h4> 
+                </div>
+                </td>
+                <td>
+                <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod4.jpg" alt="Haricots rouges - Saint Eloi - 400 g, 250 g egoutté, 425 ml">
+                     <h4>Haricots rouges - Saint Eloi - 400 g, 250 g egoutté, 425 ml</h4> 
+                </div>
+                </td>
+                
+               
+                <td>
+                <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod5.jpg" alt="Haricots verts extra-fin - U - 440 g">
+                     <h4>Haricots verts extra-fin - U - 440 g</h4> 
+                </div>
+                </td>
+                 </tr> <tr>
+                    <td>
+                    <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod1.jpg" alt="Baked beans in tomato sauce - Heinz - 415 g, 212 g (осн. продукт)">
+                     <h4>Baked beans in tomato sauce - Heinz - 415 g, 212 g (осн. продукт)</h4> 
+
+                </div>
+                </td>
+                
+                <td>
+                <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod2.jpg" alt="Haricots blancs - Carrefour - 400 g (425 ml) (265 g égoutté)">
+                     <h4>Haricots blancs - Carrefour - 400 g (425 ml) (265 g égoutté)</h4> 
+                </div>
+                </td>
+                <td>
+                <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod3.jpg" alt="Bean Boozled - Jelly belly candy company - 45g">
+                     <h4>Bean Boozled - Jelly belly candy company - 45g</h4> 
+                </div>
+                </td>
+                <td>
+                <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod4.jpg" alt="Haricots rouges - Saint Eloi - 400 g, 250 g egoutté, 425 ml">
+                     <h4>Haricots rouges - Saint Eloi - 400 g, 250 g egoutté, 425 ml</h4> 
+                </div>
+                </td>
+                
+               
+                <td>
+                <div class="box">
+                    <img src="C:\Users\Bohdan.V\Google Drive\Web_ptoject\project\static\images\prod5.jpg" alt="Haricots verts extra-fin - U - 440 g">
+                     <h4>Haricots verts extra-fin - U - 440 g</h4> 
+                </div>
+                </td>
+                 </tr>
+
+
+                
+
+             <!--   <div id="right">
+                <div class="swbtn">
+                    <h2>Pages</h2>
+                    <a class="switch"><input type="submit" value="1"></a>
+                    <a class="switch"><input type="submit" value="2"></a>
+                    <a class="switch"><input type="submit" value="3"></a>
+                    <a class="switch"><input type="submit" value="4"></a>
+                    <a class="switch"><input type="submit" value="..."></a>
+                    <a class="switch"><input type="submit" value="228"></a>
+                    <a class="switch"><input type="submit" value="229"></a>
+                    <a class="switch"><input type="submit" value="300"></a>
+                    <a class="switch"><input type="submit" value="Next"></a>
+
+                </div>
+                </div>
+            -->
+               
+            
+
+
+                </table>
+
+
+
+
+            </div>
+        </div>
+    </body>
 </html>

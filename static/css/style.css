@@ -1,0 +1,86 @@
+.nav-links {
+    display: flex;
+    align-items: center;
+    
+}
+.nav-links a {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(244, 67, 54);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    margin: 0 12px;
+}
+.nav-links a.brand {
+    background: url('../images/Logo.png') center center no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 120px;
+}
+.nav-bar {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 0 5%;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 64px;
+}
+
+.fxLayout {
+    display: flex;
+    height: calc(100% - 64px);
+}
+.column {
+    flex-direction: column;
+}
+.row {
+    flex-direction: row;
+}
+.flex {
+    flex: 1;
+}
+.middle {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.cta {
+    padding-top: 64px;
+    width: 450px;
+    margin: 0 auto;
+}
+.cta input {
+    padding: 12px;
+    font-size: 1.1em;
+    width: 100%;
+    border: 2px solid red;
+}
+.cta button {
+    margin-top: 12px;
+    padding: 12px 24px;
+    background: red;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0px;
+}
+.image {
+    background: url('../images/Logo2.png') center center no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+    height: 200px;
+    width: 100%;
+}
+
+
+.page-wrapper {
+    background: url('../images/2.jpg') center center no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
